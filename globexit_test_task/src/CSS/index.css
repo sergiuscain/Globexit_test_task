@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.employee-card {
+  background-color: #f9f9f9; /* Цвет фона карточки */
+  border: 1px solid #ddd; /* Граница карточки */
+  border-radius: 8px; /* Закругленные углы */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+  padding: 20px; /* Внутренние отступы */
+  margin: 0; /* Убираем внешний отступ, чтобы избежать лишнего пространства */
+  width: calc(30% - 10px); /* Ширина карточки, чтобы поместилось 3 карточки в строку */
+  height: 250px; /* Высота карточки */
+  transition: transform 0.2s; /* Плавный эффект при наведении */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.employee-card:hover {
+  transform: scale(1.05); /* Увеличение карточки при наведении */
+}
+
+.employee-name {
+  font-size: 1.2em; /* Размер шрифта для ФИО */
+  margin: 0 0 10px; /* Отступы */
+}
+
+.employee-phone,
+.employee-email {
+  font-size: 0.9em; /* Размер шрифта для телефона и email */
+  color: #555; /* Цвет текста */
+  margin: 5px 0; /* Отступы */
+}
+.employee-container {
+  display: flex; /* Используем Flexbox */
+  flex-wrap: wrap; /* Позволяет карточкам переноситься на новую строку */
+  justify-content: flex-start; /* Выравнивание карточек по левому краю */
+  gap: 15px; /* Промежуток между карточками */
+  padding: 20px; /* Внутренние отступы вокруг контейнера */
+  margin: 0 auto; /* Центрируем контейнер, если он имеет фиксированную ширину */
+}
+
+.search-input {
+  width: 80%; /* Ширина 80% от ширины экрана */
+  padding: 10px; /* Внутренние отступы */
+  border: 1px solid #ddd; /* Граница */
+  border-radius: 25px; /* Закругленные углы */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+  font-size: 1em; /* Размер шрифта */
+  outline: none; /* Убираем обводку при фокусировке */
+  transition: border-color 0.2s; /* Плавный переход цвета границы */
+}
+
+.search-input:focus {
+  border-color: #007bff; /* Цвет границы при фокусировке */
 }
