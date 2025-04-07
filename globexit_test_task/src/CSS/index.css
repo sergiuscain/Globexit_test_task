@@ -48,3 +48,7 @@
 .search-input:focus {
   border-color: #007bff; /* Цвет границы при фокусировке */
 }
+.icon {
+  color: #8A7B9D; /* Серо-фиолетовый цвет*/
+  margin-right: 5px; /* Отступ справа от иконки */
+}
