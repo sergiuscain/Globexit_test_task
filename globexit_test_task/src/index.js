@@ -2,13 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './CSS/index.css';
 import reportWebVitals from './reportWebVitals';
-import Header from './Layout/Header';
-import UserCards from './Layout/UserСards';
+import App from './Layout/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <UserCards/>
+    <App/>
   </React.StrictMode>
 );
 

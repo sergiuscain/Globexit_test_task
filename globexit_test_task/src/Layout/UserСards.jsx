@@ -3,7 +3,7 @@ import axios from 'axios'
 import UserCard from "./UserCard";
 import Header from './Header';
 
-const UserCards = () => {   
+const UserCards = ({setModalActive}) => {   
     const [users, setUsers] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -42,6 +42,7 @@ const UserCards = () => {
                     <UserCard
                         key={data.email} // Добавляем key здесь
                         data={data}
+                        setModalActive={setModalActive}
                     />
                 ))}
             </div>

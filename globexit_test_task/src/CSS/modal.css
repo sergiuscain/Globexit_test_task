@@ -1,0 +1,92 @@
+.modal{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.modal.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal__content{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    height: auto;
+    width: 40%;
+    transform: scale(0.5);
+    transition: 0.4s all;
+}
+
+.modal__content.active{
+    transform: scale(1);
+}
+
+
+.modal-header h3 {
+    margin: 0; /* Убираем отступы у заголовка */
+}
+
+.modal-header button {
+    position: absolute; /* Устанавливаем абсолютное позиционирование для кнопки */
+    top: 10px; /* Расстояние от верхней части родителя */
+    right: 10px; /* Расстояние от правой части родителя */
+    background: transparent; /* Сделать фон прозрачным */
+    border: none; /* Убираем границу */
+    cursor: pointer; /* Курсор в виде указателя */
+    font-size: 19px; /* Размер шрифта кнопки */
+    font-weight: bold; /* Делает текст жирным */
+}
+
+.user-details {
+    padding: 20px; /* Отступы внутри карточки */
+}
+
+table {
+    width: 100%; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем пробелы между ячейками */
+}
+
+td {
+    padding: 10px; /* Отступы внутри ячеек */
+    vertical-align: top; /* Выравнивание текста по верхнему краю */
+}
+
+.data {
+    color: gray; /* Цвет данных */
+}
+
+.additional-info {
+    margin-top: 20px; /* Отступ сверху для дополнительной информации */
+}
+
+.additional-title {
+    color: gray; /* Цвет заголовка дополнительной информации */
+    margin: 10px 0; /* Отступы для заголовка */
+}
+
+.additional-text {
+    color: gray; /* Цвет текста дополнительной информации */
+    margin: 0; /* Убираем отступы у параграфа */
+}
+
+.close-button {
+    background: transparent; /* Сделать фон прозрачным */
+    border: none; /* Убираем границу */
+    cursor: pointer; /* Курсор в виде указателя */
+    font-size: 19px; /* Размер шрифта кнопки */
+    font-weight: bold; /* Делает текст жирным */
+    position: absolute; /* Позволяет позиционировать кнопку */
+    top: 10px; /* Расположение сверху */
+    right: 10px; /* Расположение справа */
+}
