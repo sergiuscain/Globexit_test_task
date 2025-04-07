@@ -52,3 +52,27 @@
   color: #8A7B9D; /* Серо-фиолетовый цвет*/
   margin-right: 5px; /* Отступ справа от иконки */
 }
+
+.search-container {
+  position: relative;
+  display: inline-block;
+  width: 80%; /* Длина строки поиска 80% экрана */
+}
+
+.search-input {
+  width: 100%; /* Полная ширина контейнера */
+  padding-right: 40px; /* Отступ справа для иконки */
+  padding: 10px; /* Отступы внутри поля ввода */
+  font-size: 16px; /* Размер шрифта */
+  border: 1px solid #ccc; /* Граница поля ввода */
+  border-radius: 18px; /* Закругленные углы */
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px; /* Положение иконки внутри поля ввода */
+  top: 50%;
+  transform: translateY(-50%); /* Центрирование по вертикали */
+  color: #8c8b98; /* Серо-фиолетовый цвет иконки */
+  pointer-events: none; /* Иконка не будет перехватывать клики */
+}
